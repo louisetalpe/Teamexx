@@ -1,0 +1,739 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Teamex - Contact</title>
+</head>
+
+<style>
+body {background-color: #e6e6e6;}
+	
+p1 {  
+  text-align: center;
+  font-family: Roboto;
+  font-size: 5vw;
+  color: white;
+ 
+}
+	
+
+h2 {
+  font-family: roboto;
+  color: skyblue
+}
+	
+h1 {
+  font-family: roboto;
+  color: skyblue
+}	
+
+	
+.flex-rectangle{
+    width: 100%;
+	height: 200px;
+	position: fixed;
+	z-index: 10;
+    background: skyblue;
+}
+.flex-rectangle:before{
+    content: "";
+    display: block;
+    padding-top: 1%;
+}
+
+
+
+#menu ul {
+ margin:0;
+ padding:8px;
+ position: fixed;
+ list-style-type:none;
+ text-align:center;
+ font-family: helvetica;
+ }
+#menu li {
+ float:left;
+ margin:auto;
+ padding:0px;
+ background-color:skyblue;
+ }
+#menu li a {
+ display:block;
+ width:200px;
+ color:white;
+ text-decoration:none;
+ padding:5px;
+ }
+#menu li a:hover {
+ color:#FFD700;
+ }
+	
+#menu ul li ul {
+ display:none;
+ }
+	
+#menu ul li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:none;
+ }
+
+#menu li ul {
+ position:absolute;
+ }
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 10px;
+	}
+
+.responsive {
+    width: 150%;
+    height: auto;
+}
+
+
+p {
+  font-family: Helvetica;
+  color: white;
+  text-align: center;
+  margin left: 40%;
+  margin right: 40%;
+  
+}
+
+p4 {
+  font-family: Helvetica;
+  color: white;
+  text-align: center;  
+  text-align: justify;
+  
+}
+
+.dada{
+  border: 0px solid black;
+  background-color: #001E3C;
+  height: 230pxpx;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-family: Helvetica;
+}
+
+
+.footer{
+  border: 0px solid black;
+  background-color: skyblue;
+  height: 150px;
+  margin-right: 0%;
+  margin-left: 0%;
+  font-family: Helvetica;
+}
+	
+p2 {
+  border: 0px solid black;
+  background-color: ;
+  height: 150px;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+}
+
+p3 {
+  font-family: Helvetica;
+  color: white;
+}
+	
+.bobo {
+  border: 0px solid black;
+  background-color: ##11ffee00;
+  height: 180px;
+  margin-right: 0%;
+  margin-left: 0%;
+  font-family: Helvetica;
+}
+	
+.dede {
+  border: 0px solid black;
+  background-color: #e6e6e6;
+  height: 170px;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-family: Helvetica;
+  text-align: center;
+}
+	
+.toto {
+	border: 2px solid black;
+}
+
+	
+/* Simple Responsive Framework. */
+.row2 {
+  width: 100%;
+  background-color: blue;
+}
+
+/* Simple Responsive Framework. */
+.row1 {
+  width: 100%;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+
+	padding: 50px 60px 40px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+	
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 10%;
+	margin-left : 10%;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+	
+.hehe{
+	height: 300%;
+    width: 100%;
+    overflow: hidden;
+    background: #001E3C;
+}
+.hehe:before{
+    content: "";
+    display: block;
+    padding-top: 2%;
+}
+	
+.banane{
+	height: 50%;
+    width: 70%;
+    overflow: hidden;
+	margin-right: 10%;
+    margin-left: 20%;
+    background: #001E3C;
+}
+.banane:before{
+    content: "";
+    display: block;
+    padding-top: 2%;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+	
+  .col-md-13 {
+    width: 20%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 200px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-13 {
+    width: 20%;
+  }
+
+
+
+
+</style>
+<body>
+
+<meta name="Teamex - Contact" content="Contact the Teamex team to organise team events"/>
+
+<div class="flex-rectangle">
+	
+<center><img
+    src="Teamex.png" 
+    alt="teamex logo"
+    height="100px" 
+			 width="210px"/></center>
+
+
+<div id="menu">
+<div style="position:absolute;z-index:10">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li>&nbsp;</li>
+  <li><a href="AboutUs.html">US</a></li>
+  <li><a href="#">WHAT</a>
+    <ul>
+      <li><a href="#">Teambuilding</a></li>
+      <li><a href="#">Corporates games</a></li>
+      <li><a href="#">Conferences</a></li>
+    </ul>
+  </li>
+  <li><a href="Work.html">WORK</a></li>
+  <li><a href="Contact.html">CONTACT</a></li>
+</ul>
+
+
+  </div> </div>
+
+</div>
+
+	 
+
+</br></br></br></br></br></br></br></br></br></br>
+<div class="hehe">
+</br></br>
+	<h1><center>CONTACT</center></br></br></h1>
+	
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="léo.png" alt="Jane" style="width:80%"></center>
+      <div class="container">
+        <h2><center>Léo Payras</center></h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Workaholic, multi entreprenor and sport specialist</p>
+        <p>léo@teamex.com</p>
+		  <p><a href="mailto:léo@teamex.com"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <center><img src="marc.png" alt="Mike" style="width:80%"></center>
+      <div class="container">
+        <h2><center>Marc Boutier</center></h2>
+        <p class="title">Project Manager</p>
+        <p>Sport specialist, found of project manager with a 3 year experience</p>
+        <p>marc@teamex.com</p>
+		  <p><a href="mailto:marc@teamex.com"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <center><img src="louise.png" alt="John" style="width:80%"></center>
+      <div class="container">
+		  <h2><center>Louise Talpe</center></h2>
+        <p class="title">Project Manager</p>
+        <p>7 years experience organising events around the world</p>
+        <p>léo@teamex.com</p>
+		  <p><a href="mailto:louise@teamex.com"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br/>
+<br/>
+
+</div> 
+
+	<h2></br><center>FIND US</center></br></h2>
+
+<div class = "banane">
+	<div class="col-lg-3 col-md-12"><div class="bobo"><p3></p3></div></div>
+	<div class="col-lg-3 col-md-12"><div class="bobo"><p3><u><b>Adress :</b></u></br></br> Teamex </br> 1 Rue Poncelet </br> Paris 75017</br></br><u><b>Phone :</b></u></br></br> +330609894314</p3></div></div>
+  <div class="col-lg-6 col-md-12"><div class="bobo"><p3><div style = "position: left"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.9344464272363!2d2.2934758146452263!3d48.87852620724437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f935f8d5db9%3A0xc7af63e3036a678a!2s1+Rue+Poncelet%2C+75017+Paris!5e0!3m2!1sen!2sfr!4v1541843105193" width="80%" height="120%" frameborder="0" style="border:0" allowfullscreen></iframe></div> </p3></div></div>
+  
+ </div>
+
+
+<br/>	
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<p><img
+    src="Teamex.png" 
+    alt="teamex logo"
+    height="80px" 
+	width="190px"/></p>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Us</a>
+					·
+					<a href="#">What</a>
+					·
+					<a href="#">Work</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Teamex &copy; 2018</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.nike.com/fr/fr_fr/"><img
+    src="Instagram.png" 
+    alt="teamex instagram"
+    height="30px" width="30px"/></a>
+					<a href="https://www.nike.com/fr/fr_fr/"><img
+    src="Linkedin.png" 
+    alt="teamex linkedin"
+    height="30px" width="30px"/></a>
+					<a href="https://www.nike.com/fr/fr_fr/"><img
+    src="Facebook.png" 
+    alt="teamex facebook"
+    height="30px" width="30px"/></a>
+					
+
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+
+
+</body>
+</html>
